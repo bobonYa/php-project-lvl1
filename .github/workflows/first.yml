@@ -6,5 +6,8 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: Install
+        # Install project
+        run: make install
       - name: make_lint
         run: make lint
