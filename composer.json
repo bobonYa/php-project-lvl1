@@ -6,11 +6,13 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/BrainEvent.php"
         ]
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-event"
     ],
     "license": "GPL-3.0-or-later",
     "minimum-stability": "dev",

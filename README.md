@@ -6,3 +6,5 @@
 
 
 ![example workflow](https://github.com/bobonYa/php-project-lvl1/actions/workflows/first.yml/badge.svg)
+
+https://asciinema.org/a/VoFkw0ENEDnVzHxEgnU4qKwCF
