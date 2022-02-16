@@ -19,7 +19,7 @@ function game($startMsg, $questionArr)
     foreach ($questionArr as [$question, $answer]) {
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
-        if((string)$answer !== (string)$userAnswer){
+        if ((string)$answer !== (string)$userAnswer) {
             line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
             return 0;
         }
