@@ -13,3 +13,5 @@
 [Brain-calc](https://asciinema.org/a/mimDKdNoxRUxouEwuhWTLEBU4)
 
 [Brain-gcd](https://asciinema.org/a/B3eXBdyZZKR3vscneb3eGx8mn)
+
+[Brain-progression]( https://asciinema.org/a/38jcBHehVy5n1wGe6f16VzpGz)
