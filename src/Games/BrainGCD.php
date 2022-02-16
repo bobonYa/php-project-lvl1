@@ -16,7 +16,7 @@ function generateData($iter = 3)
         $val1 = rand(1, 100);
         $val2 = rand(1, 100);
         $question = "{$val1} {$val2}";
-        $answer = gmp_strval(gmp_gcd($val1,$val2));
+        $answer = gmp_strval(gmp_gcd($val1, $val2));
         $data[] = [$question, $answer];
     }
     return $data;

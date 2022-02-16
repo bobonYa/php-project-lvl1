@@ -4,7 +4,6 @@ namespace Brain\Games\Engine;
 
 use function cli\line;
 use function cli\prompt;
-use Brain\Games as Game;
 
 /**
  * @param $startMsg

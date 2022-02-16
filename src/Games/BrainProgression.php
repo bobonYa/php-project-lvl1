@@ -4,7 +4,6 @@ namespace Brain\Games\Progression;
 
 use Brain\Games\Engine as Engine;
 
-
 /**
  * генерация прогрессии
  * @param $size
@@ -20,7 +19,6 @@ function generateProgression($size = 10, $step = 2)
         $val += $step;
     }
     return $array;
-
 }
 
 /**
@@ -38,7 +36,7 @@ function generateData($iter = 3)
         $rand_key = array_rand($array, 1);
         $answer = $array[$rand_key];
         $array[$rand_key] = '..';
-        $question = implode(' ',$array);
+        $question = implode(' ', $array);
         $data[] = [$question, $answer];
     }
     return $data;

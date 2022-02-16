@@ -13,7 +13,7 @@ function generateData($iter = 3)
 
     $data = [];
     for ($i = 0; $i < $iter; $i++) {
-        $val = rand (1,100);
+        $val = rand(1, 100);
         $question = $val;
         $answer = $val % 2 ? 'no' : 'yes';
         $data[] = [$question, $answer];
@@ -38,5 +38,5 @@ function start()
 
     $msg = getStartMsg();
     $data = generateData();
-    Engine\gameStart($msg,$data);
+    Engine\gameStart($msg, $data);
 }
