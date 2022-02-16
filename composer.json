@@ -9,6 +9,7 @@
             "src/Cli.php",
             "src/Games/BrainCalc.php",
             "src/Games/BrainEven.php",
+            "src/Games/BrainGCD.php",
             "src/Engine.php",
             "src/Cli.php"
 
@@ -16,7 +17,9 @@
     },
     "bin": [
         "bin/brain-games",
-        "bin/brain-event"
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "license": "GPL-3.0-or-later",
     "minimum-stability": "dev",
