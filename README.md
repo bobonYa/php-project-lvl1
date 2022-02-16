@@ -7,4 +7,7 @@
 
 ![example workflow](https://github.com/bobonYa/php-project-lvl1/actions/workflows/first.yml/badge.svg)
 
-https://asciinema.org/a/VoFkw0ENEDnVzHxEgnU4qKwCF
+##asciinema список
+[Brain-even](https://asciinema.org/a/VoFkw0ENEDnVzHxEgnU4qKwCF)
+
+[Brain-calc](https://asciinema.org/a/mimDKdNoxRUxouEwuhWTLEBU4)
