@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
-
-require $_SERVER['PWD'].'/vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 use Brain\Games\Cli;
 
