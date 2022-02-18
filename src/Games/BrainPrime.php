@@ -10,7 +10,7 @@ use Brain\Games\Engine as Engine;
  */
 function getPrime()
 {
-    $max = 1000000;
+    $max = 100000;
     $primes = [2, 3, 5];
 
     for ($i = 7; $i < $max; $i += 2) {
