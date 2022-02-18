@@ -6,11 +6,14 @@ use function cli\line;
 use function cli\prompt;
 
 /**
- * @param $startMsg
- * @param $questionArr массив формата [ ['вопрос','ответ']] пример [['1+1',2]]
- * @return int
+ * @param string $startMsg
+ *
+ * массив формата [ ['вопрос','ответ']] пример [['1+1',2]]
+ * @param array $questionArr
+ *
+ * @return boolean
  */
-function game($startMsg, $questionArr)
+function game(string $startMsg, array $questionArr)
 {
     line($startMsg);
     foreach ($questionArr as [$question, $answer]) {
@@ -18,15 +21,19 @@ function game($startMsg, $questionArr)
         $userAnswer = prompt("Your answer");
         if ((string)$answer !== (string)$userAnswer) {
             line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
-            return 0;
+            return false;
         }
         line("Correct!");
     }
-    return 1;
+    return true;
 }
 
-
-function gameStart($startMsg, $questionArr)
+/**
+ * @param string $startMsg
+ * @param array $questionArr
+ * @return void
+ */
+function gameStart($startMsg, array $questionArr)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
