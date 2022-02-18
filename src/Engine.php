@@ -34,6 +34,6 @@ function gameStart($startMsg, $questionArr)
     if (game($startMsg, $questionArr)) {
         line("Congratulations, {$name}!");
     } else {
-        line("Let's try again, {$name}");
+        line("Let's try again, {$name}!");
     }
 }
