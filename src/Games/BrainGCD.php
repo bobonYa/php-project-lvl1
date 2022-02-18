@@ -15,7 +15,7 @@ function gcd($a, $b)
     $a = abs($a);
     $b = abs($b);
     while ($a != $b) {
-        if($a > $b) {
+        if ($a > $b) {
             $a -= $b;
         } else {
             $b -= $a;

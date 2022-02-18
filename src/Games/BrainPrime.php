@@ -17,7 +17,9 @@ function getPrime()
         $sqrt_i = (int)sqrt($i);
 
         for ($j = 0; $primes[$j] <= $sqrt_i; $j++) {
-            if ($i % $primes[$j] == 0) continue 2;
+            if ($i % $primes[$j] == 0) {
+                continue 2;
+            }
         }
         $primes[] = $i;
     }
