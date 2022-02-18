@@ -6,11 +6,11 @@ use Brain\Games\Engine as Engine;
 
 /**
  * генерация прогрессии
- * @param $size
- * @param $step
+ * @param int $size
+ * @param int $step
  * @return array
  */
-function generateProgression($size = 10, $step = 2)
+function generateProgression(int $size = 10, int $step = 2)
 {
     $array = [];
     $val = rand(-10, 10);
@@ -22,10 +22,11 @@ function generateProgression($size = 10, $step = 2)
 }
 
 /**
- * @param $iter количество данных для игры
+ * количество данных для игры
+ * @param $iter
  * @return array
  */
-function generateData($iter = 3)
+function generateData(int $iter = 3)
 {
 
     $data = [];

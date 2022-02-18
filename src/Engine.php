@@ -19,7 +19,7 @@ function game(string $startMsg, array $questionArr)
     foreach ($questionArr as [$question, $answer]) {
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
-        if ((string)$answer !== (string)$userAnswer) {
+        if ((string)$answer !== $userAnswer) {
             line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
             return false;
         }
@@ -33,7 +33,7 @@ function game(string $startMsg, array $questionArr)
  * @param array $questionArr
  * @return void
  */
-function gameStart($startMsg, array $questionArr)
+function gameStart(string $startMsg, array $questionArr)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');

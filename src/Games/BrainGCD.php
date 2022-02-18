@@ -6,11 +6,11 @@ use Brain\Games\Engine as Engine;
 
 /**
  * Функция нахождения НОД
- * @param $a
- * @param $b
+ * @param int $a
+ * @param int $b
  * @return float|int|mixed
  */
-function gcd($a, $b)
+function gcd(int $a, int $b)
 {
     $a = abs($a);
     $b = abs($b);
@@ -25,10 +25,11 @@ function gcd($a, $b)
 }
 
 /**
- * @param $iter количество данных для игры
+ * количество данных для игры
+ * @param int $iter
  * @return array
  */
-function generateData($iter = 3)
+function generateData(int $iter = 3)
 {
 
     $data = [];

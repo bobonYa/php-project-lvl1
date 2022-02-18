@@ -5,10 +5,11 @@ namespace Brain\Games\Calc;
 use Brain\Games\Engine as Engine;
 
 /**
- * @param $iter количество данных для игры
+ * количество данных для игры
+ * @param int $iter
  * @return array
  */
-function generateData($iter = 3)
+function generateData(int $iter = 3)
 {
     $operationsArr = ['+', '-', '*'];
     $answer = '';
