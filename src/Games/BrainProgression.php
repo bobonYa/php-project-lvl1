@@ -10,7 +10,7 @@ use Brain\Games\Engine as Engine;
  * @param int $step
  * @return array
  */
-function generateProgression(int $size = 10, int $step = 2)
+function generateProgression($size = 10, $step = 2)
 {
     $array = [];
     $val = rand(-10, 10);
@@ -26,7 +26,7 @@ function generateProgression(int $size = 10, int $step = 2)
  * @param int $iter
  * @return array
  */
-function generateData(int $iter = 3)
+function generateData($iter = 3)
 {
     $data = [];
     for ($i = 0; $i < $iter; $i++) {
