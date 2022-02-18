@@ -39,7 +39,7 @@ function generateData(int $iter = 3)
     for ($i = 0; $i < $iter; $i++) {
         $val = rand(1, 1000);
         $question = "{$val}";
-        $answer = in_array($val, $arrPrime) ? 'yes' : 'no';
+        $answer = in_array($val, $arrPrime, true) ? 'yes' : 'no';
         $data[] = [$question, $answer];
     }
     return $data;

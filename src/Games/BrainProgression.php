@@ -23,12 +23,11 @@ function generateProgression(int $size = 10, int $step = 2)
 
 /**
  * количество данных для игры
- * @param $iter
+ * @param int $iter
  * @return array
  */
 function generateData(int $iter = 3)
 {
-
     $data = [];
     for ($i = 0; $i < $iter; $i++) {
         $size = rand(5, 10);

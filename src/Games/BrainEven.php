@@ -16,7 +16,7 @@ function generateData(int $iter = 3)
     for ($i = 0; $i < $iter; $i++) {
         $val = rand(1, 100);
         $question = $val;
-        $answer = $val % 2 ? 'no' : 'yes';
+        $answer = ($val % 2) != 0 ? 'no' : 'yes';
         $data[] = [$question, $answer];
     }
     return $data;
