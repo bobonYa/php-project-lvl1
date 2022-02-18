@@ -32,7 +32,7 @@ function gameStart($startMsg, $questionArr)
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     if (game($startMsg, $questionArr)) {
-        line("Congratulations, {$name}");
+        line("Congratulations, {$name}!");
     } else {
         line("Let's try again, {$name}");
     }
