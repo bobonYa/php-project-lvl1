@@ -10,14 +10,17 @@ use Brain\Games\Engine as Engine;
  * @param $b
  * @return float|int|mixed
  */
-function gcd($a, $b) {
+function gcd($a, $b)
+{
     $a = abs($a);
     $b = abs($b);
-    while ($a != $b)
-        if ($a>$b)
+    while ($a != $b) {
+        if($a > $b) {
             $a -= $b;
-        else
+        } else {
             $b -= $a;
+        }
+    }
     return $a;
 }
 
